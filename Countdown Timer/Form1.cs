@@ -10,12 +10,21 @@ using System.Windows.Forms;
 
 namespace Countdown_Timer
 {
-    public partial class Form1 : Form
+    public partial class CountDownTimer : Form
     {
-        public Form1()
+        public CountDownTimer()
         {
             InitializeComponent();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CountDownTimer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

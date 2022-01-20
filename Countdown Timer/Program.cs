@@ -17,7 +17,7 @@ namespace Countdown_Timer
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RestButton());
+            Application.Run(new CountDownTimer());
         }
     }
 }
