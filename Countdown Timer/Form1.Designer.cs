@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace Countdown_Timer
 {
     partial class CountDownTimer
@@ -29,32 +31,34 @@ namespace Countdown_Timer
         /// </summary>
         private void InitializeComponent()
         {
-            this.Title = new System.Windows.Forms.Label();
-            this.TimerLable = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
+            this.Toplabel = new System.Windows.Forms.Label();
+            this.timerlabel = new System.Windows.Forms.Label();
             this.ResetButton = new System.Windows.Forms.Button();
             this.StopButton = new System.Windows.Forms.Button();
             this.StartButton = new System.Windows.Forms.Button();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // Title
+            // Toplabel
             // 
-            this.Title.Font = new System.Drawing.Font("Broadway", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Title.Location = new System.Drawing.Point(0, 9);
-            this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(800, 46);
-            this.Title.TabIndex = 0;
-            this.Title.Text = "Count Down Timer";
-            this.Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Toplabel.Font = new System.Drawing.Font("Broadway", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Toplabel.Location = new System.Drawing.Point(0, 9);
+            this.Toplabel.Name = "Toplabel";
+            this.Toplabel.Size = new System.Drawing.Size(800, 46);
+            this.Toplabel.TabIndex = 0;
+            this.Toplabel.Text = "Count Down Timer";
+            this.Toplabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TimerLable
+            // timerlabel
             // 
-            this.TimerLable.Font = new System.Drawing.Font("Broadway", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TimerLable.Location = new System.Drawing.Point(0, 106);
-            this.TimerLable.Name = "TimerLable";
-            this.TimerLable.Size = new System.Drawing.Size(800, 46);
-            this.TimerLable.TabIndex = 1;
-            this.TimerLable.Text = "60 Seconds";
-            this.TimerLable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.timerlabel.Font = new System.Drawing.Font("Broadway", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.timerlabel.Location = new System.Drawing.Point(0, 106);
+            this.timerlabel.Name = "timerlabel";
+            this.timerlabel.Size = new System.Drawing.Size(800, 46);
+            this.timerlabel.TabIndex = 1;
+            this.timerlabel.Text = "60 Seconds";
+            this.timerlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ResetButton
             // 
@@ -66,6 +70,7 @@ namespace Countdown_Timer
             this.ResetButton.TabIndex = 2;
             this.ResetButton.Text = "Reset";
             this.ResetButton.UseVisualStyleBackColor = false;
+            this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
             // 
             // StopButton
             // 
@@ -77,6 +82,7 @@ namespace Countdown_Timer
             this.StopButton.TabIndex = 3;
             this.StopButton.Text = "Stop";
             this.StopButton.UseVisualStyleBackColor = false;
+            this.StopButton.Click += new System.EventHandler(this.StopButton_Click);
             // 
             // StartButton
             // 
@@ -88,6 +94,11 @@ namespace Countdown_Timer
             this.StartButton.TabIndex = 4;
             this.StartButton.Text = "Start";
             this.StartButton.UseVisualStyleBackColor = false;
+            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
+            // 
+            // timer
+            // 
+            this.timer.Interval = 1000;
             // 
             // CountDownTimer
             // 
@@ -98,8 +109,8 @@ namespace Countdown_Timer
             this.Controls.Add(this.StartButton);
             this.Controls.Add(this.StopButton);
             this.Controls.Add(this.ResetButton);
-            this.Controls.Add(this.TimerLable);
-            this.Controls.Add(this.Title);
+            this.Controls.Add(this.timerlabel);
+            this.Controls.Add(this.Toplabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "CountDownTimer";
             this.Text = "Form1";
@@ -108,13 +119,19 @@ namespace Countdown_Timer
 
         }
 
+        private void CountDownTimer_Load(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
-        private System.Windows.Forms.Label Title;
-        private System.Windows.Forms.Label TimerLable;
+        private System.Windows.Forms.Label Toplabel;
+        private System.Windows.Forms.Label timerlabel;
         private System.Windows.Forms.Button ResetButton;
         private System.Windows.Forms.Button StopButton;
         private System.Windows.Forms.Button StartButton;
+        private System.Windows.Forms.Timer timer;
     }
 }
 
