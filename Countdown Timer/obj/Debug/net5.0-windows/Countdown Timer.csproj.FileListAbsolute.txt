@@ -1,0 +1,18 @@
+C:\Users\The Berg\source\repos\Countdown Timer\Countdown Timer\obj\Debug\net5.0-windows\Countdown Timer.csproj.AssemblyReference.cache
+C:\Users\The Berg\source\repos\Countdown Timer\Countdown Timer\obj\Debug\net5.0-windows\Countdown_Timer.CountDownTimer.resources
+C:\Users\The Berg\source\repos\Countdown Timer\Countdown Timer\obj\Debug\net5.0-windows\Countdown Timer.csproj.GenerateResource.cache
+C:\Users\The Berg\source\repos\Countdown Timer\Countdown Timer\obj\Debug\net5.0-windows\Countdown Timer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\The Berg\source\repos\Countdown Timer\Countdown Timer\obj\Debug\net5.0-windows\Countdown Timer.AssemblyInfoInputs.cache
+C:\Users\The Berg\source\repos\Countdown Timer\Countdown Timer\obj\Debug\net5.0-windows\Countdown Timer.AssemblyInfo.cs
+C:\Users\The Berg\source\repos\Countdown Timer\Countdown Timer\obj\Debug\net5.0-windows\Countdown Timer.csproj.CoreCompileInputs.cache
+C:\Users\The Berg\source\repos\Countdown Timer\Countdown Timer\bin\Debug\net5.0-windows\Countdown Timer.exe
+C:\Users\The Berg\source\repos\Countdown Timer\Countdown Timer\bin\Debug\net5.0-windows\Countdown Timer.deps.json
+C:\Users\The Berg\source\repos\Countdown Timer\Countdown Timer\bin\Debug\net5.0-windows\Countdown Timer.runtimeconfig.json
+C:\Users\The Berg\source\repos\Countdown Timer\Countdown Timer\bin\Debug\net5.0-windows\Countdown Timer.runtimeconfig.dev.json
+C:\Users\The Berg\source\repos\Countdown Timer\Countdown Timer\bin\Debug\net5.0-windows\Countdown Timer.dll
+C:\Users\The Berg\source\repos\Countdown Timer\Countdown Timer\bin\Debug\net5.0-windows\ref\Countdown Timer.dll
+C:\Users\The Berg\source\repos\Countdown Timer\Countdown Timer\bin\Debug\net5.0-windows\Countdown Timer.pdb
+C:\Users\The Berg\source\repos\Countdown Timer\Countdown Timer\obj\Debug\net5.0-windows\Countdown Timer.dll
+C:\Users\The Berg\source\repos\Countdown Timer\Countdown Timer\obj\Debug\net5.0-windows\ref\Countdown Timer.dll
+C:\Users\The Berg\source\repos\Countdown Timer\Countdown Timer\obj\Debug\net5.0-windows\Countdown Timer.pdb
+C:\Users\The Berg\source\repos\Countdown Timer\Countdown Timer\obj\Debug\net5.0-windows\Countdown Timer.genruntimeconfig.cache
