@@ -17,9 +17,10 @@ namespace Countdown_Timer
             InitializeComponent();
         }
         int timeleft = 60;
+
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if(timeleft > 0)
+            if (timeleft > 0)
             {
                 timeleft = timeleft - 1;
                 timerlabel.Text = timeleft + " seconds";
@@ -27,11 +28,10 @@ namespace Countdown_Timer
             else
             {
                 timer.Stop();
-                timerlabel.Text = "Times is up!";
+                timerlabel.Text = "Time is up!";
             }
         }
 
-       
         private void StartButton_Click(object sender, EventArgs e)
         {
             timer.Start();
@@ -48,5 +48,17 @@ namespace Countdown_Timer
         {
             timer.Stop();
         }
+
+        private void PlusButton_Click(object sender, EventArgs e)
+        {
+            timeleft = timeleft + 5;
+            timerlabel.Text = timeleft.ToString() + " Seconds";
+        }
+
+        private void MinusButton_Click(object sender, EventArgs e)
+        {
+            timeleft = timeleft - 5;
+            timerlabel.Text = timeleft.ToString() + " Seconds";
+        }
     }
-}
+    }
