@@ -99,6 +99,7 @@ namespace Countdown_Timer
             // timer
             // 
             this.timer.Interval = 1000;
+            this.timer.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // CountDownTimer
             // 
@@ -113,15 +114,10 @@ namespace Countdown_Timer
             this.Controls.Add(this.Toplabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "CountDownTimer";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.CountDownTimer_Load);
+            this.Text = "Count Down Timer";
+            this.Load += new System.EventHandler(this.timer1_Tick);
             this.ResumeLayout(false);
 
-        }
-
-        private void CountDownTimer_Load(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
         }
 
         #endregion
