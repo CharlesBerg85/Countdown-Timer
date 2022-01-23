@@ -48,5 +48,17 @@ namespace Countdown_Timer
         {
             timer.Stop();
         }
+
+        private void PlusButton_Click(object sender, EventArgs e)
+        {
+            timeleft = timeleft + 5;
+            timerlabel.Text = timeleft.ToString() + " Seconds";
+        }
+
+        private void MinusButton_Click(object sender, EventArgs e)
+        {
+            timeleft = timeleft - 5;
+            timerlabel.Text = timeleft.ToString() + " Seconds";
+        }
     }
     }

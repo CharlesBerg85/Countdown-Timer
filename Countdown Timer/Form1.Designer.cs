@@ -34,10 +34,12 @@ namespace Countdown_Timer
             this.components = new System.ComponentModel.Container();
             this.Toplabel = new System.Windows.Forms.Label();
             this.timerlabel = new System.Windows.Forms.Label();
-            this.ResetButton = new System.Windows.Forms.Button();
             this.StopButton = new System.Windows.Forms.Button();
             this.StartButton = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.ResetButton = new System.Windows.Forms.Button();
+            this.PlusButton = new System.Windows.Forms.Button();
+            this.MinusButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Toplabel
@@ -59,18 +61,6 @@ namespace Countdown_Timer
             this.timerlabel.TabIndex = 1;
             this.timerlabel.Text = "60 Seconds";
             this.timerlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ResetButton
-            // 
-            this.ResetButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.ResetButton.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ResetButton.Location = new System.Drawing.Point(272, 212);
-            this.ResetButton.Name = "ResetButton";
-            this.ResetButton.Size = new System.Drawing.Size(118, 48);
-            this.ResetButton.TabIndex = 2;
-            this.ResetButton.Text = "Reset";
-            this.ResetButton.UseVisualStyleBackColor = false;
-            this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
             // 
             // StopButton
             // 
@@ -101,12 +91,50 @@ namespace Countdown_Timer
             this.timer.Interval = 1000;
             this.timer.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // ResetButton
+            // 
+            this.ResetButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.ResetButton.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ResetButton.Location = new System.Drawing.Point(272, 212);
+            this.ResetButton.Name = "ResetButton";
+            this.ResetButton.Size = new System.Drawing.Size(118, 48);
+            this.ResetButton.TabIndex = 2;
+            this.ResetButton.Text = "Reset";
+            this.ResetButton.UseVisualStyleBackColor = false;
+            this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
+            // 
+            // PlusButton
+            // 
+            this.PlusButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.PlusButton.Font = new System.Drawing.Font("Franklin Gothic Book", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlusButton.Location = new System.Drawing.Point(272, 320);
+            this.PlusButton.Name = "PlusButton";
+            this.PlusButton.Size = new System.Drawing.Size(118, 48);
+            this.PlusButton.TabIndex = 5;
+            this.PlusButton.Text = "+";
+            this.PlusButton.UseVisualStyleBackColor = false;
+            this.PlusButton.Click += new System.EventHandler(this.PlusButton_Click);
+            // 
+            // MinusButton
+            // 
+            this.MinusButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.MinusButton.Font = new System.Drawing.Font("Franklin Gothic Book", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MinusButton.Location = new System.Drawing.Point(406, 320);
+            this.MinusButton.Name = "MinusButton";
+            this.MinusButton.Size = new System.Drawing.Size(118, 48);
+            this.MinusButton.TabIndex = 6;
+            this.MinusButton.Text = "-";
+            this.MinusButton.UseVisualStyleBackColor = false;
+            this.MinusButton.Click += new System.EventHandler(this.MinusButton_Click);
+            // 
             // CountDownTimer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Green;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.MinusButton);
+            this.Controls.Add(this.PlusButton);
             this.Controls.Add(this.StartButton);
             this.Controls.Add(this.StopButton);
             this.Controls.Add(this.ResetButton);
@@ -124,10 +152,12 @@ namespace Countdown_Timer
 
         private System.Windows.Forms.Label Toplabel;
         private System.Windows.Forms.Label timerlabel;
-        private System.Windows.Forms.Button ResetButton;
         private System.Windows.Forms.Button StopButton;
         private System.Windows.Forms.Button StartButton;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Button ResetButton;
+        private System.Windows.Forms.Button PlusButton;
+        private System.Windows.Forms.Button MinusButton;
     }
 }
 
